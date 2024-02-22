@@ -4,12 +4,11 @@ global.dfail('admin', m, conn)
 throw false
 }
 let pesan = args.join` `
-let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`
-let teks = `🔊 Deseas bot para tu grupo? ➡️ Wa.me/51992621601
-*⺀🥵Buen@s días, tardes y noches pero no mas bueno que yo⺀*\n\n❄️ ${oi}\n\n❄️ *@𝕒𝕝𝕖.𝕚𝕫𝕟_𝟚𝟘:*\n`
+let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:Disfruta tu estadia en el grupo💋😍* ${pesan}`
+let teks = `*⺀Bienvenid@ al grupo, espero que te sientas comod@, soy el Bot Rosita💋⺀*\n\n❄️ ${oi}\n\n❄️ *@fixy._.art.18:*\n`
 for (let mem of participants) {
-teks += `🇨🇳🐺 @${mem.id.split('@')[0]}\n`}
-teks += `➤ 𝐑𝐞𝐚𝐝𝐳 𝐀𝐥𝐞𝐢𝐳𝐧`
+teks += `🐥 @${mem.id.split('@')[0]}\n`}
+teks += `➤ 𝐁𝐨𝐭 𝐑𝐨𝐬𝐢𝐭𝐚`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
